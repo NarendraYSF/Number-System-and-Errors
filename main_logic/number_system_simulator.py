@@ -15,8 +15,8 @@ Fitur:
 - Interface pengguna interaktif dalam bahasa Indonesia
 - Implementasi modular dengan komentar lengkap
 
-Penulis: AI Assistant
-Tanggal: 2024
+Penulis: Kelompok 1
+Tanggal: 5/9/2025
 """
 
 import random

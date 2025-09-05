@@ -6,8 +6,8 @@ Test Suite untuk GUI Simulator Sistem Bilangan
 
 Test ini memvalidasi semua fitur GUI dan memastikan tidak ada error.
 
-Penulis: AI Assistant
-Tanggal: 2024
+Penulis: Kelompok 1
+Tanggal: 5/9/2025
 """
 
 import unittest

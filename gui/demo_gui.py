@@ -7,11 +7,11 @@ Demo GUI Simulator Sistem Bilangan
 Script ini mendemonstrasikan cara menggunakan GUI Simulator Sistem Bilangan
 dengan contoh-contoh interaktif.
 
-Penulis: AI Assistant
-Tanggal: 2024
+Penulis: Kelompok 1
+Tanggal: 5/9/2025
 """
 
-import tkinter as tk
+import tkinter as ttk
 from tkinter import messagebox
 import sys
 import os
@@ -67,7 +67,7 @@ class DemoGUISimulator(GUISimulatorSistemBilangan):
         
         # Tampilkan di tab konversi
         self.notebook.select(0)  # Pilih tab konversi
-        self.result_text.delete('1.0', tk.END)
+        self.result_text.delete('1.0', ttk.END)
         self.result_text.insert('1.0', demo_text)
         
         messagebox.showinfo("Demo Otomatis", "Demo telah dimuat di tab Konversi!\nCoba fitur-fitur lainnya di tab yang berbeda.")

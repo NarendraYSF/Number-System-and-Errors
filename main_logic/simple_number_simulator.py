@@ -13,8 +13,8 @@ Fitur:
 - Interface command-line sederhana
 - Operasi aritmatika dasar
 
-Penulis: Developer
-Tanggal: 2024
+Penulis: Kelompok 1
+Tanggal: 5/9/2025
 """
 
 import re

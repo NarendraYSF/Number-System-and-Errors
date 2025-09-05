@@ -11,8 +11,8 @@ Test yang dijalankan:
 - Test GUI (test_gui.py)
 - Test integrasi
 
-Penulis: AI Assistant
-Tanggal: 2024
+Penulis: Kelompok 1
+Tanggal: 5/9/2025
 """
 
 import subprocess

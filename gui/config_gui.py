@@ -6,8 +6,8 @@ Konfigurasi untuk GUI Simulator Sistem Bilangan
 
 File ini berisi konfigurasi untuk GUI, termasuk tema, warna, dan pengaturan lainnya.
 
-Penulis: AI Assistant
-Tanggal: 2024
+Penulis: Kelompok 1
+Tanggal: 5/9/2025
 """
 
 # Konfigurasi Tema dan Warna - Modern Minimalis
