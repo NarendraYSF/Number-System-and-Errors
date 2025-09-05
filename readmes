@@ -1,0 +1,308 @@
+# 🚀 Cara Menjalankan GUI Simulator Sistem Bilangan
+
+Panduan lengkap untuk menjalankan aplikasi GUI Simulator Sistem Bilangan dengan berbagai cara.
+
+## 📋 Daftar Isi
+
+1. [Persyaratan Sistem](#persyaratan-sistem)
+2. [Cara Menjalankan GUI](#cara-menjalankan-gui)
+3. [Cara Menjalankan CLI](#cara-menjalankan-cli)
+4. [Cara Menjalankan Test](#cara-menjalankan-test)
+5. [Troubleshooting](#troubleshooting)
+6. [Contoh Penggunaan](#contoh-penggunaan)
+
+## 🛠️ Persyaratan Sistem
+
+- **Python**: 3.6 atau lebih baru
+- **Tkinter**: Biasanya sudah terinstall dengan Python
+- **OS**: Windows, Linux, macOS
+- **Memory**: Minimal 100MB RAM
+- **Storage**: Minimal 10MB ruang disk
+
+## 🖥️ Cara Menjalankan GUI
+
+### 1. Menggunakan Script Launcher (Recommended)
+
+#### Windows
+```bash
+# Menggunakan batch file
+start.bat
+
+# Atau menggunakan Python script
+python start_gui.py
+```
+
+#### Linux/Mac
+```bash
+# Menggunakan shell script
+./start.sh
+
+# Atau menggunakan Python script
+python3 start_gui.py
+```
+
+### 2. Menjalankan GUI Langsung
+
+#### GUI Standar
+```bash
+# Windows
+python gui_simulator.py
+
+# Linux/Mac
+python3 gui_simulator.py
+```
+
+#### GUI dengan Demo
+```bash
+# Windows
+python demo_gui.py
+
+# Linux/Mac
+python3 demo_gui.py
+```
+
+### 3. Menggunakan Script Launcher dengan Opsi
+
+```bash
+# GUI standar
+python start_gui.py
+
+# GUI dengan demo
+python start_gui.py --demo
+
+# Jalankan test
+python start_gui.py --test
+
+# Bantuan
+python start_gui.py --help
+```
+
+## 💻 Cara Menjalankan CLI
+
+### 1. Mode Interaktif
+```bash
+# Windows
+python number_system_simulator.py
+
+# Linux/Mac
+python3 number_system_simulator.py
+```
+
+### 2. Demo Otomatis
+```bash
+# Windows
+python demo.py
+
+# Linux/Mac
+python3 demo.py
+```
+
+### 3. Contoh Penggunaan
+```bash
+# Windows
+python contoh_penggunaan.py
+
+# Linux/Mac
+python3 contoh_penggunaan.py
+```
+
+## 🧪 Cara Menjalankan Test
+
+### 1. Test Engine Konversi
+```bash
+# Windows
+python test_simulator.py
+
+# Linux/Mac
+python3 test_simulator.py
+```
+
+### 2. Test GUI
+```bash
+# Windows
+python test_gui.py
+
+# Linux/Mac
+python3 test_gui.py
+```
+
+### 3. Semua Test
+```bash
+# Windows
+python run_all_tests.py
+
+# Linux/Mac
+python3 run_all_tests.py
+```
+
+### 4. Test dengan Script Launcher
+```bash
+# Windows
+python start_gui.py --test
+
+# Linux/Mac
+python3 start_gui.py --test
+```
+
+## 🔧 Troubleshooting
+
+### Masalah Umum
+
+#### 1. GUI tidak terbuka
+**Penyebab**: Tkinter tidak terinstall
+**Solusi**: 
+```bash
+# Periksa tkinter
+python -m tkinter
+
+# Jika error, install tkinter
+# Ubuntu/Debian
+sudo apt-get install python3-tk
+
+# CentOS/RHEL
+sudo yum install tkinter
+
+# Windows (biasanya sudah terinstall)
+# Jika tidak, reinstall Python dengan opsi tkinter
+```
+
+#### 2. Error "Module not found"
+**Penyebab**: File tidak ditemukan
+**Solusi**: Pastikan semua file ada di direktori yang sama
+```bash
+# Periksa file yang diperlukan
+ls -la *.py
+
+# File yang harus ada:
+# - gui_simulator.py
+# - number_system_simulator.py
+# - demo_gui.py
+# - test_simulator.py
+# - test_gui.py
+```
+
+#### 3. Input tidak valid
+**Penyebab**: Format input salah
+**Solusi**: 
+- Biner: hanya 0 dan 1
+- Desimal: hanya 0-9
+- Oktal: hanya 0-7
+- Heksadesimal: 0-9 dan A-F (huruf kapital)
+
+#### 4. Hasil tidak muncul
+**Penyebab**: Input kosong atau tidak valid
+**Solusi**: 
+- Pastikan input tidak kosong
+- Pastikan format input sesuai sistem bilangan
+- Klik tombol yang sesuai
+
+### Tips Penggunaan
+
+1. **Gunakan Huruf Kapital**: Untuk heksadesimal, gunakan A-F (bukan a-f)
+2. **Validasi Input**: Pastikan input sesuai dengan sistem bilangan
+3. **Riwayat**: Gunakan tab riwayat untuk melihat konversi sebelumnya
+4. **Bantuan**: Konsultasi tab bantuan untuk panduan lengkap
+
+## 📝 Contoh Penggunaan
+
+### 1. Konversi Dasar
+```
+Input: 42 (desimal)
+Output:
+- Biner: 101010
+- Oktal: 52
+- Heksadesimal: 2A
+```
+
+### 2. Operasi Aritmatika
+```
+Input: 1010 + 110 (biner)
+Output: 10000 (biner) = 16 (desimal)
+```
+
+### 3. Simulasi Kesalahan
+```
+Input: 1010101 (biner)
+Bit Flip: 1010001 (bit ke-3 di-flip)
+Dampak: Selisih 4 dalam desimal
+```
+
+### 4. Deteksi Kesalahan
+```
+Input: 42 (desimal) → 101010 (biner)
+Status: ✅ BENAR
+
+Input: 42 (desimal) → 101011 (biner)
+Status: ❌ SALAH
+Hasil yang benar: 101010
+```
+
+## 🎯 Fitur GUI
+
+### Tab Konversi
+- Konversi antar sistem bilangan
+- Tabel konversi lengkap
+- Validasi input real-time
+
+### Tab Aritmatika
+- Operasi aritmatika dalam berbagai sistem
+- Hasil dalam sistem asal dan desimal
+- Validasi input
+
+### Tab Simulasi Kesalahan
+- Simulasi berbagai jenis kesalahan
+- Analisis dampak kesalahan
+- Penjelasan kesalahan
+
+### Tab Deteksi Kesalahan
+- Validasi hasil konversi
+- Analisis jenis kesalahan
+- Tingkat kepercayaan deteksi
+
+### Tab Riwayat
+- Riwayat konversi otomatis
+- Refresh manual
+- Hapus riwayat
+
+### Tab Bantuan
+- Panduan lengkap
+- Tips penggunaan
+- Troubleshooting
+
+## 🚀 Quick Start
+
+### Untuk Pengguna Baru
+1. Pastikan Python 3.6+ terinstall
+2. Download semua file ke satu direktori
+3. Jalankan: `python start_gui.py`
+4. Pilih mode yang diinginkan
+5. Mulai menggunakan aplikasi
+
+### Untuk Developer
+1. Clone repository
+2. Jalankan test: `python run_all_tests.py`
+3. Pastikan semua test berhasil
+4. Mulai development
+
+### Untuk Testing
+1. Jalankan: `python start_gui.py --test`
+2. Periksa hasil test
+3. Jika ada error, periksa troubleshooting
+
+## 📞 Dukungan
+
+### Bantuan
+- Lihat tab **Bantuan** di aplikasi
+- Periksa `README.md` untuk dokumentasi lengkap
+- Jalankan test untuk memastikan fungsi normal
+
+### Bug Report
+- Gunakan GitHub Issues
+- Sertakan informasi sistem
+- Sertakan langkah reproduksi
+
+---
+
+**🎉 Selamat menggunakan GUI Simulator Sistem Bilangan!**
+
+*Program ini dibuat untuk membantu pembelajaran dan pemahaman sistem bilangan dengan interface yang user-friendly dan fitur yang lengkap.*

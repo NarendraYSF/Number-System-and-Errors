@@ -1,0 +1,28 @@
+# Requirements untuk GUI Simulator Sistem Bilangan
+# ================================================
+
+# Python Standard Library (tidak perlu install)
+# - tkinter (GUI framework)
+# - threading (untuk operasi async)
+# - re (regex untuk validasi)
+# - random (untuk simulasi kesalahan)
+# - enum (untuk enumerasi sistem bilangan)
+
+# Tidak ada dependency eksternal yang diperlukan
+# Program ini menggunakan hanya library standar Python
+
+# Persyaratan Sistem:
+# - Python 3.6 atau lebih baru
+# - Tkinter (biasanya sudah terinstall dengan Python)
+
+# Untuk menjalankan:
+# 1. Pastikan Python 3.6+ terinstall
+# 2. Jalankan: python gui_simulator.py
+# 3. Atau gunakan: python run_gui.py
+
+# File yang diperlukan:
+# - gui_simulator.py (GUI utama)
+# - number_system_simulator.py (Engine konversi)
+# - demo_gui.py (GUI dengan demo, opsional)
+# - test_simulator.py (Test suite)
+# - run_gui.py (Script launcher)
